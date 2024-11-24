@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/constants/constants.dart';
-import 'package:weather_app/class/coordinate.dart';
-import 'package:weather_app/provider/city.dart';
+import 'package:weather_app/model/class/coordinate.dart';
+import 'package:weather_app/provider/city_provider.dart';
 
 final Map<String, Coordinate> cityCoordinate = {
   'jakarta pusat': Coordinate.sendCoordinate("-6.1818", "106.8223"),
@@ -15,7 +15,7 @@ class CityListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final City selected = context.watch<City>();
+    final CityProvider selected = context.watch<CityProvider>();
     return Scaffold(
       appBar: AppBar(
         title: const Text(

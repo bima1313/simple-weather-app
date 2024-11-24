@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:weather_app/class/weather.dart';
+import 'package:weather_app/model/class/weather.dart';
 
 Future<Weather> fetchWeather({
   required String latitude,

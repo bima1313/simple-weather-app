@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/components/custom_text_black.dart';
-import 'package:weather_app/components/custom_text_white.dart';
+import 'package:weather_app/UI/components/custom_text_black.dart';
+import 'package:weather_app/UI/components/custom_text_white.dart';
 import 'package:weather_app/constants/constants.dart';
 import 'package:weather_app/api/fetch_weather.dart';
-import 'package:weather_app/provider/city.dart';
-import 'package:weather_app/class/weather.dart';
-import 'package:weather_app/function/weather_code.dart';
+import 'package:weather_app/provider/city_provider.dart';
+import 'package:weather_app/model/class/weather.dart';
+import 'package:weather_app/model/function/weather_code.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final DateTime now = DateTime.now();
-    final City city = context.watch<City>();
+    final CityProvider city = context.watch<CityProvider>();
     Map weatherNow = {};
     List fourTimes = [];
     List<int> fourTemp = [];
