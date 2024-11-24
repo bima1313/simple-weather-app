@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/views/city_list_view.dart';
+import 'package:weather_app/UI/views/city_list_view.dart';
 import 'package:weather_app/constants/constants.dart';
-import 'package:weather_app/views/home_view.dart';
+import 'package:weather_app/UI/views/home_view.dart';
 import 'package:weather_app/provider/city.dart';
 
 void main() {

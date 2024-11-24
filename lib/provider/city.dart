@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/class/coordinate.dart';
+import 'package:weather_app/model/class/coordinate.dart';
 
 class City extends ChangeNotifier {
   String _city = 'Select your city';

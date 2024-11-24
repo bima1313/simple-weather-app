@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/constants/constants.dart';
-import 'package:weather_app/class/coordinate.dart';
+import 'package:weather_app/model/class/coordinate.dart';
 import 'package:weather_app/provider/city.dart';
 
 final Map<String, Coordinate> cityCoordinate = {

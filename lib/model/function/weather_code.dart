@@ -1,4 +1,4 @@
-import 'package:weather_app/class/weather_image.dart';
+import 'package:weather_app/model/class/weather_image.dart';
 
 String weatherCode({required int weatherCode, required bool isImage}) {
   if (isImage == true) {
